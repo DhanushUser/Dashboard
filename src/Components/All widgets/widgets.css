@@ -1,0 +1,39 @@
+.widgets{
+    transition: all .5s;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+    min-height: 100vh;
+}
+
+.widget-details{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    min-height: 100vh;
+    animation: slider ;
+    transition: .5s;
+}
+
+.remove-widget-btn {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+
+
+@keyframes slider {
+    0%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
